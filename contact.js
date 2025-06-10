@@ -6,7 +6,3 @@ document.getElementById("instagram").addEventListener("click", () => {
 document.getElementById("flickr").addEventListener("click", () => {
     window.open("https://www.flickr.com/photos/namtranphotography/", "_blank");
 });
-
-function goToPage(page) {
-    window.location.href = page;
-}

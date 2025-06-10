@@ -53,6 +53,23 @@ body {
     border: 2px solid var(--dark-green);
     text-align: center;
     font-size: 32px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    margin: 0 auto;
+}
+
+.logo .social-icons {
+    margin: auto 0;
+}
+
+.logo .social-icons i {
+    font-size: 36px;
+    padding: 0 20px 0 0;
+    cursor: pointer;
 }
 
 nav {
@@ -101,7 +118,7 @@ nav .links .link-text:hover {
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 800px;
+    height: 38vw;
     border-radius: 80px;
 }
 
@@ -117,6 +134,11 @@ nav .links .link-text:hover {
     align-items: center;
     font-size: 42px;
     text-align: center;
+    text-shadow: 
+        -2px -2px 0 var(--gold),
+        2px -2px 0 var(--gold),
+        -2px 2px 0 var(--gold),
+        2px 2px 0 var(--gold);
     z-index: 1;
 }
 
@@ -125,11 +147,11 @@ nav .links .link-text:hover {
     flex-direction: row;
     flex: 1;
     justify-content: center;
-    max-height: 850px;
 }
 
 .learn-more .left {
     position: relative;
+    height: 35vw;
     max-width: 55%;
 }
 
@@ -253,6 +275,11 @@ footer {
         font-size: 20px;
     }
 
+    .logo .social-icons i {
+        font-size: 22px;
+        padding: 0 10px 0 0;
+    }
+
     nav {
         height: 32px;
     }
@@ -270,12 +297,14 @@ footer {
     }
 
     .image-wrapper img {
-        height: 200px;
+        height: 22vh;
         border-radius: 45px;
     }
 
     .image-wrapper .tagline {
         font-size: 14px;
+        max-width: 85%;
+        border-radius: 5px;
     }
 
     .learn-more {
@@ -336,6 +365,117 @@ footer {
     .button-style {
         font-size: .75rem;
         padding: 0.7rem 1.25rem;
+        border-radius: 10px;
+    }
+
+    .custom-line {
+        margin: 25px 0;
+        height: 2px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        padding: 15px 35px 0;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .logo .social-icons i {
+        font-size: 26px;
+        padding: 0 15px 0 0;
+    }
+
+    nav {
+        height: 44px;
+    }
+
+    nav .links .link-text {
+        font-size: 16px;
+    }
+
+    nav .links .link-text:hover {
+        font-size: 18px;
+    }
+
+    .image-wrapper {
+        margin: 5px auto 0;
+    }
+
+    .image-wrapper img {
+        height: 45vw;
+        border-radius: 45px;
+    }
+
+    .image-wrapper .tagline {
+        font-size: 2.2vw;
+        max-width: 85%;
+    }
+
+    .learn-more {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .learn-more .left {
+        max-width: 100%;
+        height: 78vw;
+    }
+
+    .learn-more .left .pic-wrapper img:first-of-type {
+        border-radius: 40px;
+        width: 60%;
+    }
+
+    .learn-more .left .pic-wrapper img:last-of-type {
+        left: 72%;
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    .learn-more .right,
+    .lets-connect .left {
+        padding: 5px 5px 0px 5px;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .learn-more .right .text-head,
+    .lets-connect .left .text-head {
+        font-size: 26px;
+    }
+
+    .learn-more .right .text-desc,
+    .lets-connect .left .text-desc {
+        font-size: 22px;
+    }
+
+    .lets-connect {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .lets-connect .right {
+        max-width: 100%;
+        height: 45vw;
+    }
+
+    .lets-connect .right img {
+        width: 60%;
+        right: -10%;
+        border-radius: 40px;
+        box-shadow: -25px 15px 35px rgba(21, 44, 24, 0.7);
+    }
+
+    .button-style {
+        font-size: .85rem;
+        padding: 0.8rem 1.50rem;
         border-radius: 10px;
     }
 
